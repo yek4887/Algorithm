@@ -1,0 +1,40 @@
+statement+ control flow tools
+
+1. if statement :
+
+x = int(input("Please enter an integer: "))
+       if x < 0:
+       	 x = 0
+        	print('Negative changed to zero')
+       elif x == 0 :
+	print('Zero')
+       elif x == 1:
+	print('Single')
+       else:
+	print('More')
+     
+2. for statement(형식 잘 봐놓기)
+: quite different compared to C or Pascal
+특징: 임의의 sequence(list, literal 등)의 항목들을 순서대로 이터레이션함
+**sequence : 데이터를 순서대로 저장하는 자료형
+ex) list, tuple, str, range 객체, 사전
+**Iteration의 동작 방식 : sequence 자료형에 저장된 요소를 차례대로 
+가져와서 반복한다. ex) [1,2,3] >> 1,2,3을 순서대로 가져옴
+
+ex: words = ['cat', 'window', 'defenestrate']
+    for w in words:
+       print(w,len(w))
+
+3. range()
+- 일정한 간격을 가진 숫자 시퀀스를 생성하는 함수
+- for 반복문에서 iteration를 위한 숫자 리스트를 만드는 데 자주 사용
+- 최대 3개의 매개변수를 가짐(start, stop, step)
+
+ex) a = ['Mary', 'had', 'a', 'little', 'lamb']
+
+for i in range(len(a)):
+    print(i,a[i])>> enumerate()를 사용하면 간결
+
+- enumerate(): 인덱스와 값을 동시에 출력해 주는 함수
+
+*** iterable 
