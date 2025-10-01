@@ -1,9 +1,0 @@
-#선형 리스트의 일반 구현(고정x)
-
-kakaotalk = [] #카톡 친구를 저장할 빈 배열을 전역변수로 준비
-
-kakaotalk.append(None) # 1) 배열 뒤에 빈칸 추가
-k_len = len(kakaotalk) # 2) 배열 길이 확인(이 경우 1)
-kakaotalk[k_len-1] = '다현' #3) 배열 길이 - 1에 데이터 삽입
-
-print(kakaotalk)
