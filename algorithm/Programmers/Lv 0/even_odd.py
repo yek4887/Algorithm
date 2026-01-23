@@ -13,8 +13,4 @@ def solution(num_list):
     # 4. 결과 리턴 (for문과 같은 라인인 4칸 위치)
     return [even_cnt, odd_cnt]
 
-# def solution(num_list):
-#     answer = [0,0]
-#     for n in num_list:
-#         answer[n%2]+=1
-#     return answer
+
